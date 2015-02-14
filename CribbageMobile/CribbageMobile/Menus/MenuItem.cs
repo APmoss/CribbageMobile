@@ -7,11 +7,13 @@ using Microsoft.Xna.Framework;
 using GameStateManagement;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input.Touch;
+using Microsoft.Devices;
 
 namespace CribbageMobile.Menus {
 	abstract class MenuItem {
 		private bool enabled = true;
 		private Rectangle bounds;
+		private VibrateController v = VibrateController.Default;
 		
 		// Public stuff, because it's easier to read :)
 
@@ -90,6 +92,7 @@ namespace CribbageMobile.Menus {
 		/// </summary>
 		public virtual void Tap(GestureSample gesture) {
 			if (Tapped != null) {
+				v.Start(TimeSpan.FromMilliseconds(50));
 				Tapped(this, new MenuItemEventArgs(gesture));
 			}
 		}

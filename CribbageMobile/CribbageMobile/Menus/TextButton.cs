@@ -5,7 +5,12 @@ using GameStateManagement;
 
 namespace CribbageMobile.Menus {
 	class TextButton : MenuItem {
+		public bool IsTapped = false;
 		public float TextScale = 1;
+
+		public override void Tap(Microsoft.Xna.Framework.Input.Touch.GestureSample gesture) {
+			base.Tap(gesture);
+		}
 
 		public TextButton(string text, Rectangle bounds) {
 			this.Text = text;
@@ -15,6 +20,10 @@ namespace CribbageMobile.Menus {
 			this.Text = text;
 			this.Bounds = bounds;
 			this.TextScale = textScale;
+		}
+
+		public override void Update(GameTime gameTime) {
+			base.Update(gameTime);
 		}
 
 		public override void Draw(GameTime gameTime, ScreenManager screenManager, float tAlpha) {

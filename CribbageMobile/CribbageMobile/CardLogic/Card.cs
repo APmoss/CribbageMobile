@@ -16,6 +16,13 @@ namespace CribbageMobile.CardLogic {
 		protected Suite suite;
 		protected int number;
 
+		public Suite Suite {
+			get { return suite; }
+		}
+		public int Number {
+			get { return number; }
+		}
+
 		/// <summary>
 		/// Create a new card with the specified data
 		/// </summary>
@@ -52,6 +59,18 @@ namespace CribbageMobile.CardLogic {
 			return false;
 		}
 
+		public int GetCribValue() {
+			if (IsFaceCard()) {
+				return 10;
+			}
+			else if (IsAce()) {
+				return 1;
+			}
+			else {
+				return number;
+			}
+		}
+
 		/// <summary>
 		/// Returns the long name of the card (Ace of Spades, 3 of Hearts, etc.)
 		/// </summary>
@@ -86,6 +105,9 @@ namespace CribbageMobile.CardLogic {
 			if (number == 1) {
 				return "A";
 			}
+			else if (number == 10) {
+				return "T";
+			}
 			else if (number == 11) {
 				return "J";
 			}
@@ -97,6 +119,21 @@ namespace CribbageMobile.CardLogic {
 			}
 			else {
 				return number.ToString();
+			}
+		}
+
+		public string GetSuiteLetter() {
+			if (suite == CardLogic.Suite.Clubs) {
+				return "C";
+			}
+			else if (suite == CardLogic.Suite.Diamonds) {
+				return "D";
+			}
+			else if (suite == CardLogic.Suite.Hearts) {
+				return "H";
+			}
+			else {
+				return "S";
 			}
 		}
 

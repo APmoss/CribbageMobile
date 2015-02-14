@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input.Touch;
 
 namespace CribbageMobile.Menus {
 	abstract class Menu : GameScreen {
-		public const int CUSHION = 15;
+		public const int CUSHION = 10;
 
 		private List<MenuItem> menuItems = new List<MenuItem>();
 

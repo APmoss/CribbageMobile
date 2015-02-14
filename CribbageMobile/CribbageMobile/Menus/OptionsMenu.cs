@@ -15,12 +15,15 @@ namespace CribbageMobile.Menus {
 		TextButton soundLabel = new TextButton("75", new Rectangle(365, 360, 100, 50));
 		Slider soundSlider = new Slider(new Rectangle(CUSHION, 425, Stcs.Width - CUSHION * 2, 50));
 
+		TextButton customizeCards = new TextButton("Customize Cards", new Rectangle(10, 740, 460, 50));
+
 		public OptionsMenu() : base() {
 			settings = IsolatedStorageSettings.ApplicationSettings;
 			InitializeSettings();
 
 			musicSlider.ValueChanged += new EventHandler<EventArgs>(musicSlider_ValueChanged);
 			soundSlider.ValueChanged += new EventHandler<EventArgs>(soundSlider_ValueChanged);
+			customizeCards.Tapped += new EventHandler<MenuItemEventArgs>(customizeCards_Tapped);
 			
 			MenuItems.Add(new TextButton("Music", new Rectangle(CUSHION, 200, 200, 50)));
 			MenuItems.Add(new TextButton("Sounds", new Rectangle(CUSHION, 360, 200, 50)));
@@ -29,6 +32,7 @@ namespace CribbageMobile.Menus {
 			MenuItems.Add(musicSlider);
 			MenuItems.Add(soundLabel);
 			MenuItems.Add(soundSlider);
+			MenuItems.Add(customizeCards);
 			
 			EnabledGestures = GestureType.Tap | GestureType.Hold | GestureType.HorizontalDrag;
 		}
@@ -53,6 +57,9 @@ namespace CribbageMobile.Menus {
 		void soundSlider_ValueChanged(object sender, EventArgs e) {
 			soundLabel.Text = ((int)soundSlider.Amount).ToString();
 		}
+		void customizeCards_Tapped(object sender, MenuItemEventArgs e) {
+			ScreenManager.AddScreen(new CardColorMenu(), null);
+		}		
 
 		/// <summary>
 		/// Checks for needed keys and creates them if they don't exist

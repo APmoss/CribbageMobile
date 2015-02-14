@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
+using System.IO.IsolatedStorage;
 using Microsoft.Phone.Shell;
 
 using GameStateManagement;
@@ -21,6 +22,8 @@ namespace CribbageMobile {
 		GraphicsDeviceManager graphics;
 		ScreenManager screenManager;
 		ScreenFactory screenFactory;
+
+		IsolatedStorageSettings settings;
 
 		public CM_Game() {
 			graphics = new GraphicsDeviceManager(this);
@@ -51,6 +54,8 @@ namespace CribbageMobile {
 			PhoneApplicationService.Current.Launching += new EventHandler<LaunchingEventArgs>(GameLaunching);
 			PhoneApplicationService.Current.Activated += new EventHandler<ActivatedEventArgs>(GameActivated);
 			PhoneApplicationService.Current.Deactivated += new EventHandler<DeactivatedEventArgs>(GameDeactivated);
+
+			settings = IsolatedStorageSettings.ApplicationSettings;
 		}
 
 		/// <summary>
@@ -60,6 +65,8 @@ namespace CribbageMobile {
 		/// and initialize them as well.
 		/// </summary>
 		protected override void Initialize() {
+			InitIOStorage();
+
 			base.Initialize();
 		}
 
@@ -123,6 +130,30 @@ namespace CribbageMobile {
 		void GameDeactivated(object sender, DeactivatedEventArgs e) {
 			// Serialize the screenManager
 			screenManager.Deactivate();
+		}
+
+		void InitIOStorage() {
+			if (!settings.Contains("MusicVolume")) {
+				settings.Add("MusicVolume", 75);
+			}
+			if (!settings.Contains("SoundVolume")) {
+				settings.Add("SoundVolume", 75);
+			}
+
+			if (!settings.Contains("CardBackTint")) {
+				settings.Add("CardBackTint", Color.DarkBlue);
+			}
+			if (!settings.Contains("CardFrontTint")) {
+				settings.Add("CardFrontTint", Color.LightBlue);
+			}
+			if (!settings.Contains("CardLineTint")) {
+				settings.Add("CardLineTint", Color.White);
+			}
+			if (!settings.Contains("CardTextTint")) {
+				settings.Add("CardTextTint", Color.White);
+			}
+
+			settings.Save();
 		}
 	}
 }

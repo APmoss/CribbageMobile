@@ -51,6 +51,16 @@ namespace CribbageMobile.CardLogic {
 			return cards.Contains(card);
 		}
 
+		public Card Draw(Card cardToDraw) {
+			if (cards.Contains(cardToDraw)) {
+				cards.Remove(cardToDraw);
+				return cardToDraw;
+			}
+
+			// If it gets here, that's bad.
+			return null;
+		}
+
 		/// <summary>
 		/// Return and remove the top number of cards from the stack.
 		/// </summary>

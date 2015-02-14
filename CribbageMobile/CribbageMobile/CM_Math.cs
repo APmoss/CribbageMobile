@@ -41,7 +41,7 @@ namespace CribbageMobile {
 		}
 
 		/// <summary>
-		/// Returns a smooth increment towards a destination dependong on distance
+		/// Returns a smooth increment towards a destination depending on distance
 		/// </summary>
 		/// <param name="itemPosition"></param>
 		/// <param name="destination"></param>

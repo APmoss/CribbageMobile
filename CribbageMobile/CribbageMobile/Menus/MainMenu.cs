@@ -6,7 +6,6 @@ using Microsoft.Xna.Framework;
 
 namespace CribbageMobile.Menus {
 	class MainMenu : Menu {
-		TextButton testButton = new TextButton("testing", new Rectangle(CUSHION, CUSHION, Stcs.Width - CUSHION * 2, 50));
 		TextButton PvPlayerButton = new TextButton("2 Player", new Rectangle(CUSHION, 300, Stcs.Width - CUSHION * 2, 50));
 		TextButton PvEasyButton = new TextButton("Easy Computer", new Rectangle(CUSHION, 380, Stcs.Width - CUSHION * 2, 50));
 		TextButton PvMedButton = new TextButton("Medium Computer", new Rectangle(CUSHION, 460, Stcs.Width - CUSHION * 2, 50));
@@ -14,9 +13,6 @@ namespace CribbageMobile.Menus {
 		TextButton optionsButton = new TextButton("Options", new Rectangle(CUSHION, 700, Stcs.Width - CUSHION * 2, 50));
 
 		public MainMenu() : base() {
-			testButton.Tapped += new EventHandler<MenuItemEventArgs>(testButton_Tapped);
-			MenuItems.Add(testButton);
-
 			PvPlayerButton.Tapped += new EventHandler<MenuItemEventArgs>(PvPlayerButton_Tapped);
 			MenuItems.Add(PvPlayerButton);
 
@@ -41,22 +37,17 @@ namespace CribbageMobile.Menus {
 			base.Draw(gameTime);
 		}
 
-		//TODO: remove this
-		void testButton_Tapped(object sender, EventArgs e) {
-			testButton.Enabled = false;
-		}
-
 		void PvPlayerButton_Tapped(object sender, MenuItemEventArgs e) {
-			ScreenManager.AddScreen(new StageSelect(), null);
+			PvPlayerButton.Text = "Nope!";
 		}
 		void PvEasyButton_Tapped(object sender, MenuItemEventArgs e) {
 			LoadingScreen.Load(ScreenManager, new List<GameScreen>() { new GameBackground(Color.White), new GameSession(AIType.Easy) });
 		}
 		void PvMedButton_Tapped(object sender, MenuItemEventArgs e) {
-			throw new NotImplementedException();
+			PvMedButton.Text = "Nope!";
 		}
 		void PvHardButton_Tapped(object sender, MenuItemEventArgs e) {
-			throw new NotImplementedException();
+			PvHardButton.Text = "Nope!";
 		}
 
 		void optionsButton_Tapped(object sender, EventArgs e) {
