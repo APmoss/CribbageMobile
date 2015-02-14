@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts", "Layouts.csproj", "{7855A602-887F-4BED-89D3-81F268B9EDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationConfig", "..\ApplicationConfig\ApplicationConfig.csproj", "{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionEvaluator", "..\ExpressionEvaluator\ExpressionEvaluator.csproj", "{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutsUnitTests", "LayoutsUnitTests\LayoutsUnitTests.csproj", "{671578A5-8589-44D0-B14B-6559319F421A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Debug.ActiveCfg = Debug|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Debug.Build.0 = Debug|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Release.ActiveCfg = Release|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Release.Build.0 = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.ActiveCfg = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.Build.0 = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.ActiveCfg = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.Build.0 = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.ActiveCfg = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.Build.0 = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.ActiveCfg = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.Build.0 = Release|.NET
+		{671578A5-8589-44D0-B14B-6559319F421A}.Debug.ActiveCfg = Debug|.NET
+		{671578A5-8589-44D0-B14B-6559319F421A}.Debug.Build.0 = Debug|.NET
+		{671578A5-8589-44D0-B14B-6559319F421A}.Release.ActiveCfg = Release|.NET
+		{671578A5-8589-44D0-B14B-6559319F421A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards", "Cards.csproj", "{594B5742-7FB7-4162-903A-A0DC85665538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardsUnitTests", "CardsUnitTests\CardsUnitTests.csproj", "{2B41C124-B4AD-41AF-91C5-9AC120F0FF54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image", "..\Image\Image.csproj", "{4CEDEA69-E679-4794-AA28-DE5C48252ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUnitTests", "..\Image\ImageUnitTests\ImageUnitTests.csproj", "{37CF2B5F-0809-4CFC-ADFE-0F6A88E3A8F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "..\Events\Events.csproj", "{8E37818A-D9CB-4B4D-82DC-1D68748362E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMessageEvent", "..\Events\UserMessageEvent\UserMessageEvent.csproj", "{E14A5480-6CF0-4741-82AE-6DC07806075C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Debug.ActiveCfg = Debug|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Debug.Build.0 = Debug|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Release.ActiveCfg = Release|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Release.Build.0 = Release|.NET
+		{2B41C124-B4AD-41AF-91C5-9AC120F0FF54}.Debug.ActiveCfg = Debug|.NET
+		{2B41C124-B4AD-41AF-91C5-9AC120F0FF54}.Debug.Build.0 = Debug|.NET
+		{2B41C124-B4AD-41AF-91C5-9AC120F0FF54}.Release.ActiveCfg = Release|.NET
+		{2B41C124-B4AD-41AF-91C5-9AC120F0FF54}.Release.Build.0 = Release|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Debug.ActiveCfg = Debug|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Debug.Build.0 = Debug|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Release.ActiveCfg = Release|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Release.Build.0 = Release|.NET
+		{37CF2B5F-0809-4CFC-ADFE-0F6A88E3A8F1}.Debug.ActiveCfg = Debug|.NET
+		{37CF2B5F-0809-4CFC-ADFE-0F6A88E3A8F1}.Debug.Build.0 = Debug|.NET
+		{37CF2B5F-0809-4CFC-ADFE-0F6A88E3A8F1}.Release.ActiveCfg = Release|.NET
+		{37CF2B5F-0809-4CFC-ADFE-0F6A88E3A8F1}.Release.Build.0 = Release|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Debug.ActiveCfg = Debug|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Debug.Build.0 = Debug|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Release.ActiveCfg = Release|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Release.Build.0 = Release|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Debug.ActiveCfg = Debug|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Debug.Build.0 = Debug|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Release.ActiveCfg = Release|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

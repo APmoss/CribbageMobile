@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statistics", "Statistics.csproj", "{81C49F3D-A7F7-4C61-9B69-420A421A2DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionEvaluator", "..\ExpressionEvaluator\ExpressionEvaluator.csproj", "{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticsUnitTests", "StatisticsUnitTests\StatisticsUnitTests.csproj", "{7516301C-E8D6-41DB-88AA-9800F96DEC2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationConfig", "..\ApplicationConfig\ApplicationConfig.csproj", "{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationConfigUnitTests", "..\ApplicationConfig\ApplicationConfigUnitTests\ApplicationConfigUnitTests.csproj", "{8B17A4BA-4B44-4435-84CD-6A8B507882B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{81C49F3D-A7F7-4C61-9B69-420A421A2DCE}.Debug.ActiveCfg = Debug|.NET
+		{81C49F3D-A7F7-4C61-9B69-420A421A2DCE}.Debug.Build.0 = Debug|.NET
+		{81C49F3D-A7F7-4C61-9B69-420A421A2DCE}.Release.ActiveCfg = Release|.NET
+		{81C49F3D-A7F7-4C61-9B69-420A421A2DCE}.Release.Build.0 = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.ActiveCfg = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.Build.0 = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.ActiveCfg = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.Build.0 = Release|.NET
+		{7516301C-E8D6-41DB-88AA-9800F96DEC2C}.Debug.ActiveCfg = Debug|.NET
+		{7516301C-E8D6-41DB-88AA-9800F96DEC2C}.Debug.Build.0 = Debug|.NET
+		{7516301C-E8D6-41DB-88AA-9800F96DEC2C}.Release.ActiveCfg = Release|.NET
+		{7516301C-E8D6-41DB-88AA-9800F96DEC2C}.Release.Build.0 = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.ActiveCfg = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.Build.0 = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.ActiveCfg = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.Build.0 = Release|.NET
+		{8B17A4BA-4B44-4435-84CD-6A8B507882B5}.Debug.ActiveCfg = Debug|.NET
+		{8B17A4BA-4B44-4435-84CD-6A8B507882B5}.Debug.Build.0 = Debug|.NET
+		{8B17A4BA-4B44-4435-84CD-6A8B507882B5}.Release.ActiveCfg = Release|.NET
+		{8B17A4BA-4B44-4435-84CD-6A8B507882B5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

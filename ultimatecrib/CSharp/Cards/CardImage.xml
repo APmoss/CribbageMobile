@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CardImage>
+	<Families>
+	   <!-- Each Faily node represents a deck of cards -->
+	   <!--    Name : A name for the deck -->
+	   <!--    Overlay Label (true/false): When true the cards face value is added to the card face -->
+	   <!--    Represents (Card/Deck/Suit/FaceValue): Indicates what each image will represent. This controls how the Name of the Image element will be parsed -->
+	   <!--    UseSymbol (true/false): When true the cards suit is displayed using the symbol font -->
+	   <!--    TransparentColourName : The name of a System.Color to render as transparent -->
+		<Family Name="Cards32" OverlayLabel="false" Represents="Card" UseSymbol="false" DrawBorder="false" TransparentColourName="">
+			<Images>
+      	   <!-- Each Image node represents a card -->
+      	   <!--    Name : The card the image is for can be in the form FaceValue+Suit, FaceValue, Suit, or blank -->
+      	   <!--    Type (Resource/Bitmap) : Where the card is coming from -->
+      	   <!--    FileName : The name of the file containing the resource or the bitmap file -->
+      	   <!--    Resource : If type is resource then this is the resource id -->
+      	   <!--    CropLeft : Amount of the image to discard on the left edge -->
+      	   <!--    CropRight : Amount of the image to discard on the right edge -->
+      	   <!--    CropTop : Amount of the image to discard on the top edge -->
+      	   <!--    CropBottom : Amount of the image to discard on the bottom edge -->
+      	   <!--    Render (Centre/Tile/Scale) : How to render the image within the card -->
+				<Image Name="AC" Type="Resource" FileName="cards32.dll" Resource="1" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="2C" Type="Resource" FileName="cards32.dll" Resource="2" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="3C" Type="Resource" FileName="cards32.dll" Resource="3" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="4C" Type="Resource" FileName="cards32.dll" Resource="4" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="5C" Type="Resource" FileName="cards32.dll" Resource="5" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="6C" Type="Resource" FileName="cards32.dll" Resource="6" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="7C" Type="Resource" FileName="cards32.dll" Resource="7" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="8C" Type="Resource" FileName="cards32.dll" Resource="8" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="9C" Type="Resource" FileName="cards32.dll" Resource="9" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="10C" Type="Resource" FileName="cards32.dll" Resource="10" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="JC" Type="Resource" FileName="cards32.dll" Resource="11" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="QC" Type="Resource" FileName="cards32.dll" Resource="12" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="KC" Type="Resource" FileName="cards32.dll" Resource="13" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="AD" Type="Resource" FileName="cards32.dll" Resource="14" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="2D" Type="Resource" FileName="cards32.dll" Resource="15" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="3D" Type="Resource" FileName="cards32.dll" Resource="16" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="4D" Type="Resource" FileName="cards32.dll" Resource="17" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="5D" Type="Resource" FileName="cards32.dll" Resource="18" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="6D" Type="Resource" FileName="cards32.dll" Resource="19" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="7D" Type="Resource" FileName="cards32.dll" Resource="20" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="8D" Type="Resource" FileName="cards32.dll" Resource="21" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="9D" Type="Resource" FileName="cards32.dll" Resource="22" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="10D" Type="Resource" FileName="cards32.dll" Resource="23" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="JD" Type="Resource" FileName="cards32.dll" Resource="24" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="QD" Type="Resource" FileName="cards32.dll" Resource="25" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="KD" Type="Resource" FileName="cards32.dll" Resource="26" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="AH" Type="Resource" FileName="cards32.dll" Resource="27" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="2H" Type="Resource" FileName="cards32.dll" Resource="28" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="3H" Type="Resource" FileName="cards32.dll" Resource="29" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="4H" Type="Resource" FileName="cards32.dll" Resource="30" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="5H" Type="Resource" FileName="cards32.dll" Resource="31" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="6H" Type="Resource" FileName="cards32.dll" Resource="32" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="7H" Type="Resource" FileName="cards32.dll" Resource="33" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="8H" Type="Resource" FileName="cards32.dll" Resource="34" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="9H" Type="Resource" FileName="cards32.dll" Resource="35" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="10H" Type="Resource" FileName="cards32.dll" Resource="36" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="JH" Type="Resource" FileName="cards32.dll" Resource="37" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="QH" Type="Resource" FileName="cards32.dll" Resource="38" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="KH" Type="Resource" FileName="cards32.dll" Resource="39" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="AS" Type="Resource" FileName="cards32.dll" Resource="40" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="2S" Type="Resource" FileName="cards32.dll" Resource="41" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="3S" Type="Resource" FileName="cards32.dll" Resource="42" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="4S" Type="Resource" FileName="cards32.dll" Resource="43" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="5S" Type="Resource" FileName="cards32.dll" Resource="44" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="6S" Type="Resource" FileName="cards32.dll" Resource="45" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="7S" Type="Resource" FileName="cards32.dll" Resource="46" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="8S" Type="Resource" FileName="cards32.dll" Resource="47" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="9S" Type="Resource" FileName="cards32.dll" Resource="48" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="10S" Type="Resource" FileName="cards32.dll" Resource="49" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="JS" Type="Resource" FileName="cards32.dll" Resource="50" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="QS" Type="Resource" FileName="cards32.dll" Resource="51" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+				<Image Name="KS" Type="Resource" FileName="cards32.dll" Resource="52" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+			</Images>
+		</Family>
+		<Family Name="Plain" OverlayLabel="true" Represents="Deck" UseSymbol="true" DrawBorder="true" TransparentColourName="">
+			<Images>
+				<Image Name="" Type="Bitmap" FileName="white.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Tile" />
+			</Images>
+		</Family>
+		<Family Name="Suit" OverlayLabel="true" Represents="Suit" UseSymbol="true" DrawBorder="true" TransparentColourName="Yellow">
+			<Images>
+				<Image Name="C" Type="Bitmap" FileName="clubs.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Tile" />
+				<Image Name="S" Type="Bitmap" FileName="spades.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Tile" />
+				<Image Name="D" Type="Bitmap" FileName="diamonds.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Tile" />
+				<Image Name="H" Type="Bitmap" FileName="hearts.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Tile" />
+			</Images>
+		</Family>
+		<Family Name="Custom1" OverlayLabel="true" Represents="Deck" UseSymbol="true" DrawBorder="true" TransparentColourName="Yellow">
+			<Images>
+				<Image Name="" Type="Bitmap" FileName="Custom1_1.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+			</Images>
+		</Family>
+		<Family Name="Custom4" OverlayLabel="true" Represents="Suit" UseSymbol="true" DrawBorder="true" TransparentColourName="Yellow">
+			<Images>
+				<Image Name="C" Type="Bitmap" FileName="Custom4_1.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="S" Type="Bitmap" FileName="Custom4_2.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="D" Type="Bitmap" FileName="Custom4_3.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="H" Type="Bitmap" FileName="Custom4_4.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+			</Images>
+		</Family>
+		<Family Name="Custom13" OverlayLabel="true" Represents="FaceValue" UseSymbol="true" DrawBorder="true" TransparentColourName="Yellow">
+			<Images>
+				<Image Name="A" Type="Bitmap" FileName="Custom13_1.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="2" Type="Bitmap" FileName="Custom13_2.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="3" Type="Bitmap" FileName="Custom13_3.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="4" Type="Bitmap" FileName="Custom13_4.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="5" Type="Bitmap" FileName="Custom13_5.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="6" Type="Bitmap" FileName="Custom13_6.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="7" Type="Bitmap" FileName="Custom13_7.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="8" Type="Bitmap" FileName="Custom13_8.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="9" Type="Bitmap" FileName="Custom13_9.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="10" Type="Bitmap" FileName="Custom13_10.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="J" Type="Bitmap" FileName="Custom13_11.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="Q" Type="Bitmap" FileName="Custom13_12.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="K" Type="Bitmap" FileName="Custom13_13.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+			</Images>
+		</Family>
+		<Family Name="Custom52" OverlayLabel="true" Represents="Card" UseSymbol="true" DrawBorder="true" TransparentColourName="">
+			<Images>
+				<Image Name="AC" Type="Bitmap" FileName="Custom52_1.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="2C" Type="Bitmap" FileName="Custom52_2.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="3C" Type="Bitmap" FileName="Custom52_3.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="4C" Type="Bitmap" FileName="Custom52_4.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="5C" Type="Bitmap" FileName="Custom52_5.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="6C" Type="Bitmap" FileName="Custom52_6.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="7C" Type="Bitmap" FileName="Custom52_7.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="8C" Type="Bitmap" FileName="Custom52_8.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="9C" Type="Bitmap" FileName="Custom52_9.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="10C" Type="Bitmap" FileName="Custom52_10.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="JC" Type="Bitmap" FileName="Custom52_11.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="QC" Type="Bitmap" FileName="Custom52_12.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="KC" Type="Bitmap" FileName="Custom52_13.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="AH" Type="Bitmap" FileName="Custom52_14.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="2H" Type="Bitmap" FileName="Custom52_15.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="3H" Type="Bitmap" FileName="Custom52_16.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="4H" Type="Bitmap" FileName="Custom52_17.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="5H" Type="Bitmap" FileName="Custom52_18.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="6H" Type="Bitmap" FileName="Custom52_19.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="7H" Type="Bitmap" FileName="Custom52_20.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="8H" Type="Bitmap" FileName="Custom52_21.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="9H" Type="Bitmap" FileName="Custom52_22.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="10H" Type="Bitmap" FileName="Custom52_23.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="JH" Type="Bitmap" FileName="Custom52_24.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="QH" Type="Bitmap" FileName="Custom52_25.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="KH" Type="Bitmap" FileName="Custom52_26.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="AD" Type="Bitmap" FileName="Custom52_27.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="2D" Type="Bitmap" FileName="Custom52_28.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="3D" Type="Bitmap" FileName="Custom52_29.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="4D" Type="Bitmap" FileName="Custom52_30.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="5D" Type="Bitmap" FileName="Custom52_31.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="6D" Type="Bitmap" FileName="Custom52_32.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="7D" Type="Bitmap" FileName="Custom52_33.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="8D" Type="Bitmap" FileName="Custom52_34.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="9D" Type="Bitmap" FileName="Custom52_35.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="10D" Type="Bitmap" FileName="Custom52_36.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="JD" Type="Bitmap" FileName="Custom52_37.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="QD" Type="Bitmap" FileName="Custom52_38.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="KD" Type="Bitmap" FileName="Custom52_39.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="AS" Type="Bitmap" FileName="Custom52_40.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="2S" Type="Bitmap" FileName="Custom52_41.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="3S" Type="Bitmap" FileName="Custom52_42.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="4S" Type="Bitmap" FileName="Custom52_43.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="5S" Type="Bitmap" FileName="Custom52_44.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="6S" Type="Bitmap" FileName="Custom52_45.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="7S" Type="Bitmap" FileName="Custom52_46.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="8S" Type="Bitmap" FileName="Custom52_47.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="9S" Type="Bitmap" FileName="Custom52_48.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="10S" Type="Bitmap" FileName="Custom52_49.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="JS" Type="Bitmap" FileName="Custom52_50.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="QS" Type="Bitmap" FileName="Custom52_51.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+				<Image Name="KS" Type="Bitmap" FileName="Custom52_52.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+			</Images>
+		</Family>
+		<Family Name="Davids Deck 1" OverlayLabel="false" Represents="Card" UseSymbol="false" DrawBorder="false" TransparentColourName="Magenta">
+			<Images>
+				<Image Name="AC" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="0" CropRight="681" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="2C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="68" CropRight="613" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="3C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="0" CropRight="681" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="4C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="680" CropRight="1" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="5C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="612" CropRight="69" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="6C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="544" CropRight="137" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="7C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="476" CropRight="205" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="8C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="408" CropRight="273" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="9C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="340" CropRight="341" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="10C" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="272" CropRight="409" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="JC" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="204" CropRight="477" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="QC" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="136" CropRight="545" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="KC" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="68" CropRight="613" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="AH" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="408" CropRight="273" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="2H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="476" CropRight="205" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="3H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="408" CropRight="273" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="4H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="340" CropRight="341" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="5H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="272" CropRight="409" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="6H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="204" CropRight="477" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="7H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="136" CropRight="545" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="8H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="68" CropRight="613" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="9H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="0" CropRight="681" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="10H" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="680" CropRight="1" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="JH" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="612" CropRight="69" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="QH" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="544" CropRight="137" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="KH" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="476" CropRight="205" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="AD" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="272" CropRight="409" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="2D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="340" CropRight="341" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="3D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="272" CropRight="409" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="4D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="204" CropRight="477" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="5D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="136" CropRight="545" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="6D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="68" CropRight="613" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="7D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="0" CropRight="681" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="8D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="680" CropRight="1" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="9D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="612" CropRight="69" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="10D" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="544" CropRight="137" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="JD" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="476" CropRight="205" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="QD" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="408" CropRight="273" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="KD" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="340" CropRight="341" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="AS" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="136" CropRight="545" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="2S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="204" CropRight="477" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="3S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="136" CropRight="545" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="4S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="68" CropRight="613" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="5S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="0" CropRight="681" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="6S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="680" CropRight="1" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="7S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="612" CropRight="69" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="8S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="544" CropRight="137" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="9S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="476" CropRight="205" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="10S" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="408" CropRight="273" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="JS" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="340" CropRight="341" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="QS" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="272" CropRight="409" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="KS" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="204" CropRight="477" CropTop="96" CropBottom="289" Render="Centre" />
+			</Images>
+	   </Family>
+		<Family Name="Davids Deck 2" OverlayLabel="false" Represents="Card" UseSymbol="false" DrawBorder="false" TransparentColourName="Magenta">
+			<Images>
+				<Image Name="AC" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="0" CropRight="681" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="2C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="68" CropRight="613" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="3C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="0" CropRight="681" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="4C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="680" CropRight="1" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="5C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="612" CropRight="69" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="6C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="544" CropRight="137" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="7C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="476" CropRight="205" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="8C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="408" CropRight="273" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="9C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="340" CropRight="341" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="10C" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="272" CropRight="409" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="JC" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="204" CropRight="477" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="QC" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="136" CropRight="545" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="KC" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="68" CropRight="613" CropTop="0" CropBottom="385" Render="Centre" />
+				<Image Name="AH" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="408" CropRight="273" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="2H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="476" CropRight="205" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="3H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="408" CropRight="273" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="4H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="340" CropRight="341" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="5H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="272" CropRight="409" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="6H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="204" CropRight="477" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="7H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="136" CropRight="545" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="8H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="68" CropRight="613" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="9H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="0" CropRight="681" CropTop="384" CropBottom="1" Render="Centre" />
+				<Image Name="10H" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="680" CropRight="1" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="JH" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="612" CropRight="69" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="QH" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="544" CropRight="137" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="KH" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="476" CropRight="205" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="AD" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="272" CropRight="409" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="2D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="340" CropRight="341" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="3D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="272" CropRight="409" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="4D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="204" CropRight="477" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="5D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="136" CropRight="545" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="6D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="68" CropRight="613" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="7D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="0" CropRight="681" CropTop="288" CropBottom="97" Render="Centre" />
+				<Image Name="8D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="680" CropRight="1" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="9D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="612" CropRight="69" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="10D" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="544" CropRight="137" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="JD" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="476" CropRight="205" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="QD" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="408" CropRight="273" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="KD" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="340" CropRight="341" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="AS" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="136" CropRight="545" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="2S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="204" CropRight="477" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="3S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="136" CropRight="545" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="4S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="68" CropRight="613" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="5S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="0" CropRight="681" CropTop="192" CropBottom="193" Render="Centre" />
+				<Image Name="6S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="680" CropRight="1" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="7S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="612" CropRight="69" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="8S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="544" CropRight="137" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="9S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="476" CropRight="205" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="10S" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="408" CropRight="273" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="JS" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="340" CropRight="341" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="QS" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="272" CropRight="409" CropTop="96" CropBottom="289" Render="Centre" />
+				<Image Name="KS" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="204" CropRight="477" CropTop="96" CropBottom="289" Render="Centre" />
+			</Images>
+	   </Family>
+	</Families>
+	<Decks>
+	   <!-- Each Deck node represents a back face of a deck of cards -->
+	   <!--    Name : A name for the card back -->
+      <!--    Type (Resource/Bitmap) : Where the card is coming from -->
+      <!--    FileName : The name of the file containing the resource or the bitmap file -->
+      <!--    Resource : If type is resource then this is the resource id -->
+      <!--    CropLeft : Amount of the image to discard on the left edge -->
+      <!--    CropRight : Amount of the image to discard on the right edge -->
+      <!--    CropTop : Amount of the image to discard on the top edge -->
+      <!--    CropBottom : Amount of the image to discard on the bottom edge -->
+      <!--    Render (Centre/Tile/Scale) : How to render the image within the card -->
+		<Deck Name="Cards32_1" Type="Resource" FileName="cards32.dll" Resource="54" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_2" Type="Resource" FileName="cards32.dll" Resource="55" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_3" Type="Resource" FileName="cards32.dll" Resource="56" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_4" Type="Resource" FileName="cards32.dll" Resource="57" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_5" Type="Resource" FileName="cards32.dll" Resource="58" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_6" Type="Resource" FileName="cards32.dll" Resource="59" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_7" Type="Resource" FileName="cards32.dll" Resource="60" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_8" Type="Resource" FileName="cards32.dll" Resource="61" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_9" Type="Resource" FileName="cards32.dll" Resource="62" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_10" Type="Resource" FileName="cards32.dll" Resource="63" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_11" Type="Resource" FileName="cards32.dll" Resource="64" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Cards32_12" Type="Resource" FileName="cards32.dll" Resource="65" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Centre" />
+		<Deck Name="Custom" Type="Bitmap" FileName="Custom_Deck.bmp" CropLeft="0" CropRight="0" CropTop="0" CropBottom="0" Render="Scale" />
+		<Deck Name="Davids Deck 1" Type="Bitmap" FileName="CardDeck1.bmp" CropLeft="544" CropRight="137" CropTop="384" CropBottom="1" Render="Centre" />
+		<Deck Name="Davids Deck 2" Type="Bitmap" FileName="CardDeck2.bmp" CropLeft="544" CropRight="137" CropTop="384" CropBottom="1" Render="Centre" />
+		<Deck Name="DD Dinosaur" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="0" CropRight="681" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Cactus Flower" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="68" CropRight="613" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Red Rose" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="0" CropRight="681" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Desert View" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="680" CropRight="1" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Island View" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="612" CropRight="69" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Polar Bear" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="544" CropRight="137" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Wolves" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="476" CropRight="205" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Lion" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="408" CropRight="273" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Dolphins" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="340" CropRight="341" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Red Crest BIrd" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="272" CropRight="409" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Yellow Bird" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="204" CropRight="477" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Owl" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="136" CropRight="545" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Red Bird" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="68" CropRight="613" CropTop="0" CropBottom="385" Render="Centre" />
+		<Deck Name="DD Rings" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="408" CropRight="273" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Fire" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="680" CropRight="1" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Spring" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="612" CropRight="69" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Winter" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="544" CropRight="137" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Autumn" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="476" CropRight="205" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Eagle" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="272" CropRight="409" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Ruins" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="340" CropRight="341" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Ball" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="272" CropRight="409" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Silver Ball" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="204" CropRight="477" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Roses" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="136" CropRight="545" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Swan" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="68" CropRight="613" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Peaches" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="0" CropRight="681" CropTop="288" CropBottom="97" Render="Centre" />
+		<Deck Name="DD Pineapple" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="680" CropRight="1" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Demon Ball" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="612" CropRight="69" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Sunrise" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="544" CropRight="137" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD XP Desktop" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="476" CropRight="205" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Windows Logo" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="408" CropRight="273" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Snow Globe" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="340" CropRight="341" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Lake View" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="136" CropRight="545" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Alien World" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="204" CropRight="477" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Earth" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="136" CropRight="545" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Space Walk" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="68" CropRight="613" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Butterfly" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="0" CropRight="681" CropTop="192" CropBottom="193" Render="Centre" />
+		<Deck Name="DD Koala" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="680" CropRight="1" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Panda" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="612" CropRight="69" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Desert Arch" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="544" CropRight="137" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Tiger" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="476" CropRight="205" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Penguin" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="408" CropRight="273" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Chess" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="340" CropRight="341" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Moon Crescent" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="272" CropRight="409" CropTop="96" CropBottom="289" Render="Centre" />
+		<Deck Name="DD Small Waterfall" Type="Bitmap" FileName="CardBacks.bmp" CropLeft="204" CropRight="477" CropTop="96" CropBottom="289" Render="Centre" />
+	</Decks>
+</CardImage>

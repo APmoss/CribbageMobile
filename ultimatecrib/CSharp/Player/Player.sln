@@ -1,0 +1,99 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player", "Player.csproj", "{10170089-7C9F-4ECE-9D08-4189715073CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerUnitTests", "PlayerUnitTests\PlayerUnitTests.csproj", "{48F1DFC6-1AD7-499D-A776-D4297EDB3CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "..\Events\Events.csproj", "{8E37818A-D9CB-4B4D-82DC-1D68748362E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards", "..\Cards\Cards.csproj", "{594B5742-7FB7-4162-903A-A0DC85665538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image", "..\Image\Image.csproj", "{4CEDEA69-E679-4794-AA28-DE5C48252ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsUnitTests", "..\Events\EventsUnitTests\EventsUnitTests.csproj", "{D31F4455-C977-439B-8DEE-748D1AA99194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMessageEvent", "..\Events\UserMessageEvent\UserMessageEvent.csproj", "{E14A5480-6CF0-4741-82AE-6DC07806075C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandDealtEvent", "..\Events\HandDealtEvent\HandDealtEvent.csproj", "{B3B4EA8F-9F4A-4643-B749-67C7817340D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterCardDisplayedEvent", "..\Events\StarterCardDisplayedEvent\StarterCardDisplayedEvent.csproj", "{6F698C79-6054-4C70-9C78-63B399713EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CribCards", "..\CribCards\CribCards.csproj", "{9C66244B-FF15-4848-9F69-CEA4171C020F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationConfig", "..\ApplicationConfig\ApplicationConfig.csproj", "{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts", "..\Layout\Layouts.csproj", "{7855A602-887F-4BED-89D3-81F268B9EDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionEvaluator", "..\ExpressionEvaluator\ExpressionEvaluator.csproj", "{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CribCardsUnitTests", "..\CribCards\CribCardsUnitTests\CribCardsUnitTests.csproj", "{4731572B-FE0E-4A54-AE88-51A06BB55226}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{10170089-7C9F-4ECE-9D08-4189715073CA}.Debug.ActiveCfg = Debug|.NET
+		{10170089-7C9F-4ECE-9D08-4189715073CA}.Debug.Build.0 = Debug|.NET
+		{10170089-7C9F-4ECE-9D08-4189715073CA}.Release.ActiveCfg = Release|.NET
+		{10170089-7C9F-4ECE-9D08-4189715073CA}.Release.Build.0 = Release|.NET
+		{48F1DFC6-1AD7-499D-A776-D4297EDB3CDA}.Debug.ActiveCfg = Debug|.NET
+		{48F1DFC6-1AD7-499D-A776-D4297EDB3CDA}.Debug.Build.0 = Debug|.NET
+		{48F1DFC6-1AD7-499D-A776-D4297EDB3CDA}.Release.ActiveCfg = Release|.NET
+		{48F1DFC6-1AD7-499D-A776-D4297EDB3CDA}.Release.Build.0 = Release|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Debug.ActiveCfg = Debug|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Debug.Build.0 = Debug|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Release.ActiveCfg = Release|.NET
+		{8E37818A-D9CB-4B4D-82DC-1D68748362E3}.Release.Build.0 = Release|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Debug.ActiveCfg = Debug|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Debug.Build.0 = Debug|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Release.ActiveCfg = Release|.NET
+		{594B5742-7FB7-4162-903A-A0DC85665538}.Release.Build.0 = Release|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Debug.ActiveCfg = Debug|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Debug.Build.0 = Debug|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Release.ActiveCfg = Release|.NET
+		{4CEDEA69-E679-4794-AA28-DE5C48252ABF}.Release.Build.0 = Release|.NET
+		{D31F4455-C977-439B-8DEE-748D1AA99194}.Debug.ActiveCfg = Debug|.NET
+		{D31F4455-C977-439B-8DEE-748D1AA99194}.Debug.Build.0 = Debug|.NET
+		{D31F4455-C977-439B-8DEE-748D1AA99194}.Release.ActiveCfg = Release|.NET
+		{D31F4455-C977-439B-8DEE-748D1AA99194}.Release.Build.0 = Release|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Debug.ActiveCfg = Debug|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Debug.Build.0 = Debug|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Release.ActiveCfg = Release|.NET
+		{E14A5480-6CF0-4741-82AE-6DC07806075C}.Release.Build.0 = Release|.NET
+		{B3B4EA8F-9F4A-4643-B749-67C7817340D5}.Debug.ActiveCfg = Debug|.NET
+		{B3B4EA8F-9F4A-4643-B749-67C7817340D5}.Debug.Build.0 = Debug|.NET
+		{B3B4EA8F-9F4A-4643-B749-67C7817340D5}.Release.ActiveCfg = Release|.NET
+		{B3B4EA8F-9F4A-4643-B749-67C7817340D5}.Release.Build.0 = Release|.NET
+		{6F698C79-6054-4C70-9C78-63B399713EDB}.Debug.ActiveCfg = Debug|.NET
+		{6F698C79-6054-4C70-9C78-63B399713EDB}.Debug.Build.0 = Debug|.NET
+		{6F698C79-6054-4C70-9C78-63B399713EDB}.Release.ActiveCfg = Release|.NET
+		{6F698C79-6054-4C70-9C78-63B399713EDB}.Release.Build.0 = Release|.NET
+		{9C66244B-FF15-4848-9F69-CEA4171C020F}.Debug.ActiveCfg = Debug|.NET
+		{9C66244B-FF15-4848-9F69-CEA4171C020F}.Debug.Build.0 = Debug|.NET
+		{9C66244B-FF15-4848-9F69-CEA4171C020F}.Release.ActiveCfg = Release|.NET
+		{9C66244B-FF15-4848-9F69-CEA4171C020F}.Release.Build.0 = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.ActiveCfg = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Debug.Build.0 = Debug|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.ActiveCfg = Release|.NET
+		{2D270E53-5E7F-426E-8C21-4BB0CA066A8F}.Release.Build.0 = Release|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Debug.ActiveCfg = Debug|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Debug.Build.0 = Debug|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Release.ActiveCfg = Release|.NET
+		{7855A602-887F-4BED-89D3-81F268B9EDDA}.Release.Build.0 = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.ActiveCfg = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Debug.Build.0 = Debug|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.ActiveCfg = Release|.NET
+		{A7145EC1-4D5D-4FD4-BEE6-9CA459049ED0}.Release.Build.0 = Release|.NET
+		{4731572B-FE0E-4A54-AE88-51A06BB55226}.Debug.ActiveCfg = Debug|.NET
+		{4731572B-FE0E-4A54-AE88-51A06BB55226}.Debug.Build.0 = Debug|.NET
+		{4731572B-FE0E-4A54-AE88-51A06BB55226}.Release.ActiveCfg = Release|.NET
+		{4731572B-FE0E-4A54-AE88-51A06BB55226}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

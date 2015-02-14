@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Statistics>
+  <Definition>
+	 <!-- Each Stat node represents a user presentable statistic based on a raw value -->
+	 <!--    Title: A name for the statistic -->
+	 <!--    Formula: Formula for calculating the statistic. Values in [] are raw statistic values -->
+	 <!--    MinReport: The minimum level at which this stat should be reported -->
+    <Stat Title="Games Won" Formula="[Games Won]" MinReport="Match" />
+    <Stat Title="Games Lost" Formula="[Games Lost]" MinReport="Match" />
+    <Stat Title="Games Played" Formula="[Games Won]+[Games Lost]" MinReport="Match" />
+    <Stat Title="Games Abandoned" Formula="[Abandoned]" MinReport="Match" />
+    <Stat Title="Matches Won" Formula="[Matches Won]" MinReport="All" />
+    <Stat Title="Matches Lost" Formula="[Matches Lost]" MinReport="All" />
+    <Stat Title="Matches Played" Formula="[Matches Won]+[Matches Lost]" MinReport="All" />
+    <Stat Title="Percentage of Games Lost" Formula="([Games Lost] * 100)/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Percentage of Games Won" Formula="([Games Won] * 100)/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Percentage of Matches Lost" Formula="([Matches Lost] * 100)/([Matches Won]+[Matches Lost])" MinReport="All" />
+    <Stat Title="Percentage of Matches Won" Formula="([Matches Won] * 100)/([Matches Won]+[Matches Lost])" MinReport="All" />
+    <Stat Title="Worst Game Losing Streak" Formula="[Longest Game Losing Streak]" MinReport="Match" />
+    <Stat Title="Best Game Winning Streak" Formula="[Longest Game Winning Streak]" MinReport="Match" />
+    <Stat Title="Current Game Losing Streak" Formula="[Losing Game Streak]" MinReport="Match" />
+    <Stat Title="Current Game Winning Streak" Formula="[Winning Game Streak]" MinReport="Match" />
+    <Stat Title="Worst Match Losing Streak" Formula="[Longest Match Losing Streak]" MinReport="All" />
+    <Stat Title="Best Match Winning Streak" Formula="[Longest Match Winning Streak]" MinReport="All" />
+    <Stat Title="Current Match Losing Streak" Formula="[Losing Match Streak]" MinReport="All" />
+    <Stat Title="Current Match Winning Streak" Formula="[Winning Match Streak]" MinReport="All" />
+    <Stat Title="Game Points Lost" Formula="[Games Lost]+[Skunks Lost]+3*[Double Skunks Lost]" MinReport="Match" />
+    <Stat Title="Game Points Won" Formula="[Games Won]+[Skunks Won]+3*[Double Skunks Won]" MinReport="Match" />
+    <Stat Title="Percentage Game Points Lost" Formula="(100*([Games Lost]+[Skunks Lost]+3*[Double Skunks Lost]))/([Games Lost]+[Skunks Lost]+3*[Double Skunks Lost]+[Games Won]+[Skunks Won]+3*[Double Skunks Won])" MinReport="Match" />
+    <Stat Title="Percentage Game Points Won" Formula="(100*([Games Won]+[Skunks Won]+3*[Double Skunks Won]))/([Games Lost]+[Skunks Lost]+3*[Double Skunks Lost]+[Games Won]+[Skunks Won]+3*[Double Skunks Won])" MinReport="Match" />
+    <Stat Title="Gambling Balance" Formula="([Games Won]-[Games Lost] + [Skunks Won] - [Skunks Lost] + 3 *([Double Skunks Won] - [Double Skunks Lost])*{CentsPerWin}+([Total Winning Margin]-[Total losing Margin])*{CentsPerPoint}" MinReport="Match" />
+    <Stat Title="Double Skunks Lost" Formula="[Double Skunks Lost]" MinReport="Match" />
+    <Stat Title="Double Skunks Won" Formula="[Double Skunks Won]" MinReport="Match" />
+    <Stat Title="Skunks Lost" Formula="[Skunks Lost]" MinReport="Match" />
+    <Stat Title="Skunks Won" Formula="[Skunks Won]" MinReport="Match" />
+    <Stat Title="Average Final Score" Formula="([Total Hand]+[Total Play]+[Total Crib]+[Total Penalty])/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Number of Games Lost By 1 Point" Formula="[Lost In Stink Hole]" MinReport="Match" />
+    <Stat Title="Average Losing Margin" Formula="[Total Losing Margin]/[Games Lost]" MinReport="Match" />
+    <Stat Title="Largest Losing Margin" Formula="[Worst Losing Margin]" MinReport="Match" />
+    <Stat Title="Average Winning Margin" Formula="[Total Winning Margin]/[Games Won]" MinReport="Match" />
+    <Stat Title="Largest Winning Margin" Formula="[Best Winning Margin]" MinReport="Match" />
+    <Stat Title="Average Margin" Formula="([Total Winning Margin]+[Total Losing Margin])/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Percentage of Hands Worth 0" Formula="(100*[Hands Worth 0])/([Hands Worth 0]+[Hands Worth 1]+[Hands Worth 2]+[Hands Worth 3]+[Hands Worth 4]+[Hands Worth 5]+[Hands Worth 6]+[Hands Worth 7]+[Hands Worth 8]+[Hands Worth 9]+[Hands Worth 10]+[Hands Worth 11]+[Hands Worth 12]+[Hands Worth 13]+[Hands Worth 14]+[Hands Worth 15]+[Hands Worth 16]+[Hands Worth 17]+[Hands Worth 18]+[Hands Worth 19]+[Hands Worth 20]+[Hands Worth 21]+[Hands Worth 22]+[Hands Worth 23]+[Hands Worth 24]+[Hands Worth 25]+[Hands Worth 26]+[Hands Worth 27]+[Hands Worth 28]+[Hands Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Hands Worth 1-6" Formula="(100*([Hands Worth 1]+[Hands Worth 2]+[Hands Worth 3]+[Hands Worth 4]+[Hands Worth 5]+[Hands Worth 6]))/([Hands Worth 0]+[Hands Worth 1]+[Hands Worth 2]+[Hands Worth 3]+[Hands Worth 4]+[Hands Worth 5]+[Hands Worth 6]+[Hands Worth 7]+[Hands Worth 8]+[Hands Worth 9]+[Hands Worth 10]+[Hands Worth 11]+[Hands Worth 12]+[Hands Worth 13]+[Hands Worth 14]+[Hands Worth 15]+[Hands Worth 16]+[Hands Worth 17]+[Hands Worth 18]+[Hands Worth 19]+[Hands Worth 20]+[Hands Worth 21]+[Hands Worth 22]+[Hands Worth 23]+[Hands Worth 24]+[Hands Worth 25]+[Hands Worth 26]+[Hands Worth 27]+[Hands Worth 28]+[Hands Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Hands Worth 7-11" Formula="(100*([Hands Worth 7]+[Hands Worth 8]+[Hands Worth 9]+[Hands Worth 10]+[Hands Worth 11]))/([Hands Worth 0]+[Hands Worth 1]+[Hands Worth 2]+[Hands Worth 3]+[Hands Worth 4]+[Hands Worth 5]+[Hands Worth 6]+[Hands Worth 7]+[Hands Worth 8]+[Hands Worth 9]+[Hands Worth 10]+[Hands Worth 11]+[Hands Worth 12]+[Hands Worth 13]+[Hands Worth 14]+[Hands Worth 15]+[Hands Worth 16]+[Hands Worth 17]+[Hands Worth 18]+[Hands Worth 19]+[Hands Worth 20]+[Hands Worth 21]+[Hands Worth 22]+[Hands Worth 23]+[Hands Worth 24]+[Hands Worth 25]+[Hands Worth 26]+[Hands Worth 27]+[Hands Worth 28]+[Hands Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Hands Worth 12+" Formula="(100*([Hands Worth 12]+[Hands Worth 13]+[Hands Worth 14]+[Hands Worth 15]+[Hands Worth 16]+[Hands Worth 17]+[Hands Worth 18]+[Hands Worth 19]+[Hands Worth 20]+[Hands Worth 21]+[Hands Worth 22]+[Hands Worth 23]+[Hands Worth 24]+[Hands Worth 25]+[Hands Worth 26]+[Hands Worth 27]+[Hands Worth 28]+[Hands Worth 29]))/([Hands Worth 0]+[Hands Worth 0]+[Hands Worth 1]+[Hands Worth 2]+[Hands Worth 3]+[Hands Worth 4]+[Hands Worth 5]+[Hands Worth 6]+[Hands Worth 7]+[Hands Worth 8]+[Hands Worth 9]+[Hands Worth 10]+[Hands Worth 11]+[Hands Worth 12]+[Hands Worth 13]+[Hands Worth 14]+[Hands Worth 15]+[Hands Worth 16]+[Hands Worth 17]+[Hands Worth 18]+[Hands Worth 19]+[Hands Worth 20]+[Hands Worth 21]+[Hands Worth 22]+[Hands Worth 23]+[Hands Worth 24]+[Hands Worth 25]+[Hands Worth 26]+[Hands Worth 27]+[Hands Worth 28]+[Hands Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Cribs Worth 0" Formula="(100*[Cribs Worth 0])/([Cribs Worth 0]+[Cribs Worth 1]+[Cribs Worth 2]+[Cribs Worth 3]+[Cribs Worth 4]+[Cribs Worth 5]+[Cribs Worth 6]+[Cribs Worth 7]+[Cribs Worth 8]+[Cribs Worth 9]+[Cribs Worth 10]+[Cribs Worth 11]+[Cribs Worth 12]+[Cribs Worth 13]+[Cribs Worth 14]+[Cribs Worth 15]+[Cribs Worth 16]+[Cribs Worth 17]+[Cribs Worth 18]+[Cribs Worth 19]+[Cribs Worth 20]+[Cribs Worth 21]+[Cribs Worth 22]+[Cribs Worth 23]+[Cribs Worth 24]+[Cribs Worth 25]+[Cribs Worth 26]+[Cribs Worth 27]+[Cribs Worth 28]+[Cribs Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Cribs Worth 1-6" Formula="(100*([Cribs Worth 1]+[Cribs Worth 2]+[Cribs Worth 3]+[Cribs Worth 4]+[Cribs Worth 5]+[Cribs Worth 6]))/([Cribs Worth 0]+[Cribs Worth 1]+[Cribs Worth 2]+[Cribs Worth 3]+[Cribs Worth 4]+[Cribs Worth 5]+[Cribs Worth 6]+[Cribs Worth 7]+[Cribs Worth 8]+[Cribs Worth 9]+[Cribs Worth 10]+[Cribs Worth 11]+[Cribs Worth 12]+[Cribs Worth 13]+[Cribs Worth 14]+[Cribs Worth 15]+[Cribs Worth 16]+[Cribs Worth 17]+[Cribs Worth 18]+[Cribs Worth 19]+[Cribs Worth 20]+[Cribs Worth 21]+[Cribs Worth 22]+[Cribs Worth 23]+[Cribs Worth 24]+[Cribs Worth 25]+[Cribs Worth 26]+[Cribs Worth 27]+[Cribs Worth 28]+[Cribs Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Cribs Worth 7-11" Formula="(100*([Cribs Worth 7]+[Cribs Worth 8]+[Cribs Worth 9]+[Cribs Worth 10]+[Cribs Worth 11]))/([Cribs Worth 0]+[Cribs Worth 1]+[Cribs Worth 2]+[Cribs Worth 3]+[Cribs Worth 4]+[Cribs Worth 5]+[Cribs Worth 6]+[Cribs Worth 7]+[Cribs Worth 8]+[Cribs Worth 9]+[Cribs Worth 10]+[Cribs Worth 11]+[Cribs Worth 12]+[Cribs Worth 13]+[Cribs Worth 14]+[Cribs Worth 15]+[Cribs Worth 16]+[Cribs Worth 17]+[Cribs Worth 18]+[Cribs Worth 19]+[Cribs Worth 20]+[Cribs Worth 21]+[Cribs Worth 22]+[Cribs Worth 23]+[Cribs Worth 24]+[Cribs Worth 25]+[Cribs Worth 26]+[Cribs Worth 27]+[Cribs Worth 28]+[Cribs Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Cribs Worth 12+" Formula="(100*([Cribs Worth 12]+[Cribs Worth 13]+[Cribs Worth 14]+[Cribs Worth 15]+[Cribs Worth 16]+[Cribs Worth 17]+[Cribs Worth 18]+[Cribs Worth 19]+[Cribs Worth 20]+[Cribs Worth 21]+[Cribs Worth 22]+[Cribs Worth 23]+[Cribs Worth 24]+[Cribs Worth 25]+[Cribs Worth 26]+[Cribs Worth 27]+[Cribs Worth 28]+[Cribs Worth 29]))/([Cribs Worth 0]+[Cribs Worth 0]+[Cribs Worth 1]+[Cribs Worth 2]+[Cribs Worth 3]+[Cribs Worth 4]+[Cribs Worth 5]+[Cribs Worth 6]+[Cribs Worth 7]+[Cribs Worth 8]+[Cribs Worth 9]+[Cribs Worth 10]+[Cribs Worth 11]+[Cribs Worth 12]+[Cribs Worth 13]+[Cribs Worth 14]+[Cribs Worth 15]+[Cribs Worth 16]+[Cribs Worth 17]+[Cribs Worth 18]+[Cribs Worth 19]+[Cribs Worth 20]+[Cribs Worth 21]+[Cribs Worth 22]+[Cribs Worth 23]+[Cribs Worth 24]+[Cribs Worth 25]+[Cribs Worth 26]+[Cribs Worth 27]+[Cribs Worth 28]+[Cribs Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Plays Worth 0" Formula="(100*[Plays Worth 0])/([Plays Worth 0]+[Plays Worth 1]+[Plays Worth 2]+[Plays Worth 3]+[Plays Worth 4]+[Plays Worth 5]+[Plays Worth 6]+[Plays Worth 7]+[Plays Worth 8]+[Plays Worth 9]+[Plays Worth 10]+[Plays Worth 11]+[Plays Worth 12]+[Plays Worth 13]+[Plays Worth 14]+[Plays Worth 15]+[Plays Worth 16]+[Plays Worth 17]+[Plays Worth 18]+[Plays Worth 19]+[Plays Worth 20]+[Plays Worth 21]+[Plays Worth 22]+[Plays Worth 23]+[Plays Worth 24]+[Plays Worth 25]+[Plays Worth 26]+[Plays Worth 27]+[Plays Worth 28]+[Plays Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Plays Worth 1-6" Formula="(100*([Plays Worth 1]+[Plays Worth 2]+[Plays Worth 3]+[Plays Worth 4]+[Plays Worth 5]+[Plays Worth 6]))/([Plays Worth 0]+[Plays Worth 1]+[Plays Worth 2]+[Plays Worth 3]+[Plays Worth 4]+[Plays Worth 5]+[Plays Worth 6]+[Plays Worth 7]+[Plays Worth 8]+[Plays Worth 9]+[Plays Worth 10]+[Plays Worth 11]+[Plays Worth 12]+[Plays Worth 13]+[Plays Worth 14]+[Plays Worth 15]+[Plays Worth 16]+[Plays Worth 17]+[Plays Worth 18]+[Plays Worth 19]+[Plays Worth 20]+[Plays Worth 21]+[Plays Worth 22]+[Plays Worth 23]+[Plays Worth 24]+[Plays Worth 25]+[Plays Worth 26]+[Plays Worth 27]+[Plays Worth 28]+[Plays Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Plays Worth 7-11" Formula="(100*([Plays Worth 7]+[Plays Worth 8]+[Plays Worth 9]+[Plays Worth 10]+[Plays Worth 11]))/([Plays Worth 0]+[Plays Worth 1]+[Plays Worth 2]+[Plays Worth 3]+[Plays Worth 4]+[Plays Worth 5]+[Plays Worth 6]+[Plays Worth 7]+[Plays Worth 8]+[Plays Worth 9]+[Plays Worth 10]+[Plays Worth 11]+[Plays Worth 12]+[Plays Worth 13]+[Plays Worth 14]+[Plays Worth 15]+[Plays Worth 16]+[Plays Worth 17]+[Plays Worth 18]+[Plays Worth 19]+[Plays Worth 20]+[Plays Worth 21]+[Plays Worth 22]+[Plays Worth 23]+[Plays Worth 24]+[Plays Worth 25]+[Plays Worth 26]+[Plays Worth 27]+[Plays Worth 28]+[Plays Worth 29])" MinReport="Match" />
+    <Stat Title="Percentage of Plays Worth 12+" Formula="(100*([Plays Worth 12]+[Plays Worth 13]+[Plays Worth 14]+[Plays Worth 15]+[Plays Worth 16]+[Plays Worth 17]+[Plays Worth 18]+[Plays Worth 19]+[Plays Worth 20]+[Plays Worth 21]+[Plays Worth 22]+[Plays Worth 23]+[Plays Worth 24]+[Plays Worth 25]+[Plays Worth 26]+[Plays Worth 27]+[Plays Worth 28]+[Plays Worth 29]))/([Plays Worth 0]+[Plays Worth 0]+[Plays Worth 1]+[Plays Worth 2]+[Plays Worth 3]+[Plays Worth 4]+[Plays Worth 5]+[Plays Worth 6]+[Plays Worth 7]+[Plays Worth 8]+[Plays Worth 9]+[Plays Worth 10]+[Plays Worth 11]+[Plays Worth 12]+[Plays Worth 13]+[Plays Worth 14]+[Plays Worth 15]+[Plays Worth 16]+[Plays Worth 17]+[Plays Worth 18]+[Plays Worth 19]+[Plays Worth 20]+[Plays Worth 21]+[Plays Worth 22]+[Plays Worth 23]+[Plays Worth 24]+[Plays Worth 25]+[Plays Worth 26]+[Plays Worth 27]+[Plays Worth 28]+[Plays Worth 29])" MinReport="Match" />
+    <Stat Title="Average Penalty Points Per Game" Formula="[Total Penalty]/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Best Points in Play per Deal" Formula="[Best Play]" MinReport="Match" />
+    <Stat Title="Average Points in Play per Deal" Formula="[Total Play]/[Hands Scored]" MinReport="Match" />
+    <Stat Title="Best Crib" Formula="[Best Crib]" MinReport="Match" />
+    <Stat Title="Average Crib" Formula="[Total Crib]/[Cribs Scored]" MinReport="Match" />
+    <Stat Title="Best Hand" Formula="[Best Hand]" MinReport="Match" />
+    <Stat Title="Average Hand" Formula="[Total Hand]/[Hands Scored]" MinReport="Match" />
+    <Stat Title="Maximum Hands in a Game" Formula="[Maximum Hands]" MinReport="Match" />
+    <Stat Title="Minimum Hands in a Game" Formula="[Minimum Hands]" MinReport="Match" />
+    <Stat Title="Average Hands in a Game" Formula="[Hands Scored]/([Games Won]+[Games Lost])" MinReport="Match" />
+    <Stat Title="Percentage of Points From Penalties" Formula="(100*[Total Penalty])/([Total Hand]+[Total Crib]+[Total Play]+[Total Penalty])" MinReport="Match" />
+    <Stat Title="Percentage of Points From Play" Formula="(100*[Total Play])/([Total Hand]+[Total Crib]+[Total Play]+[Total Penalty])" MinReport="Match" />
+    <Stat Title="Percentage of Points From Crib" Formula="(100*[Total Crib])/([Total Hand]+[Total Crib]+[Total Play]+[Total Penalty])" MinReport="Match" />
+    <Stat Title="Percentage of Points From Hand" Formula="(100*[Total Hand])/([Total Hand]+[Total Crib]+[Total Play]+[Total Penalty])" MinReport="Match" />
+  </Definition>
+  <RawData>
+    <Definition>
+	   <!-- Each Data node represents a raw stat that is collected -->
+	   <!--    Name: The name of the raw statistic -->
+	   <!--    Aggregate: How to determine the new value given a new value and an old value -->
+      <Data Name="Abandoned" Aggregate="Add" />
+      <Data Name="Games Won" Aggregate="Add" />
+      <Data Name="Games Lost" Aggregate="Add" />
+      <Data Name="Matches Won" Aggregate="Add" />
+      <Data Name="Matches Lost" Aggregate="Add" />
+      <Data Name="Hands Scored" Aggregate="Add" />
+      <Data Name="Hands Started" Aggregate="Add" />
+      <Data Name="Cribs Scored" Aggregate="Add" />
+      <Data Name="Hands Played To Table" Aggregate="Add" />
+      <Data Name="Winning Game Streak" Aggregate="AddOrReset" />
+      <Data Name="Losing Game Streak" Aggregate="AddOrReset" />
+      <Data Name="Longest Game Winning Streak" Aggregate="High" />
+      <Data Name="Longest Game Losing Streak" Aggregate="High" />
+      <Data Name="Winning Match Streak" Aggregate="AddOrReset" />
+      <Data Name="Losing Match Streak" Aggregate="AddOrReset" />
+      <Data Name="Longest Match Winning Streak" Aggregate="High" />
+      <Data Name="Longest Match Losing Streak" Aggregate="High" />
+      <Data Name="Best Hand" Aggregate="High" />
+      <Data Name="Best Crib" Aggregate="High" />
+      <Data Name="Best Play" Aggregate="High" />
+      <Data Name="Total Hand" Aggregate="Add" />
+      <Data Name="Total Crib" Aggregate="Add" />
+      <Data Name="Total Play" Aggregate="Add" />
+      <Data Name="Total Penalty" Aggregate="Add" />
+      <Data Name="Minimum Hands" Aggregate="Low" />
+      <Data Name="Maximum Hands" Aggregate="High" />
+      <Data Name="Total Winning Margin" Aggregate="Add" />
+      <Data Name="Total Losing Margin" Aggregate="Add" />
+      <Data Name="Best Winning Margin" Aggregate="High" />
+      <Data Name="Worst Losing Margin" Aggregate="High" />
+      <Data Name="Skunks Won" Aggregate="Add" />
+      <Data Name="Skunks Lost" Aggregate="Add" />
+      <Data Name="Double Skunks Won" Aggregate="Add" />
+      <Data Name="Double Skunks Lost" Aggregate="Add" />
+      <Data Name="Lost In Stink Hole" Aggregate="Add" />
+      <Data Name="Least Winning Margin" Aggregate="Low" />
+      <Data Name="Least Losing Margin" Aggregate="Low" />
+      <Data Name="Hands Worth 0" Aggregate="Add" />
+      <Data Name="Hands Worth 1" Aggregate="Add" />
+      <Data Name="Hands Worth 2" Aggregate="Add" />
+      <Data Name="Hands Worth 3" Aggregate="Add" />
+      <Data Name="Hands Worth 4" Aggregate="Add" />
+      <Data Name="Hands Worth 5" Aggregate="Add" />
+      <Data Name="Hands Worth 6" Aggregate="Add" />
+      <Data Name="Hands Worth 7" Aggregate="Add" />
+      <Data Name="Hands Worth 8" Aggregate="Add" />
+      <Data Name="Hands Worth 9" Aggregate="Add" />
+      <Data Name="Hands Worth 10" Aggregate="Add" />
+      <Data Name="Hands Worth 11" Aggregate="Add" />
+      <Data Name="Hands Worth 12" Aggregate="Add" />
+      <Data Name="Hands Worth 13" Aggregate="Add" />
+      <Data Name="Hands Worth 14" Aggregate="Add" />
+      <Data Name="Hands Worth 15" Aggregate="Add" />
+      <Data Name="Hands Worth 16" Aggregate="Add" />
+      <Data Name="Hands Worth 17" Aggregate="Add" />
+      <Data Name="Hands Worth 18" Aggregate="Add" />
+      <Data Name="Hands Worth 19" Aggregate="Add" />
+      <Data Name="Hands Worth 20" Aggregate="Add" />
+      <Data Name="Hands Worth 21" Aggregate="Add" />
+      <Data Name="Hands Worth 22" Aggregate="Add" />
+      <Data Name="Hands Worth 23" Aggregate="Add" />
+      <Data Name="Hands Worth 24" Aggregate="Add" />
+      <Data Name="Hands Worth 25" Aggregate="Add" />
+      <Data Name="Hands Worth 26" Aggregate="Add" />
+      <Data Name="Hands Worth 27" Aggregate="Add" />
+      <Data Name="Hands Worth 28" Aggregate="Add" />
+      <Data Name="Hands Worth 29" Aggregate="Add" />
+      <Data Name="Cribs Worth 0" Aggregate="Add" />
+      <Data Name="Cribs Worth 1" Aggregate="Add" />
+      <Data Name="Cribs Worth 2" Aggregate="Add" />
+      <Data Name="Cribs Worth 3" Aggregate="Add" />
+      <Data Name="Cribs Worth 4" Aggregate="Add" />
+      <Data Name="Cribs Worth 5" Aggregate="Add" />
+      <Data Name="Cribs Worth 6" Aggregate="Add" />
+      <Data Name="Cribs Worth 7" Aggregate="Add" />
+      <Data Name="Cribs Worth 8" Aggregate="Add" />
+      <Data Name="Cribs Worth 9" Aggregate="Add" />
+      <Data Name="Cribs Worth 10" Aggregate="Add" />
+      <Data Name="Cribs Worth 11" Aggregate="Add" />
+      <Data Name="Cribs Worth 12" Aggregate="Add" />
+      <Data Name="Cribs Worth 13" Aggregate="Add" />
+      <Data Name="Cribs Worth 14" Aggregate="Add" />
+      <Data Name="Cribs Worth 15" Aggregate="Add" />
+      <Data Name="Cribs Worth 16" Aggregate="Add" />
+      <Data Name="Cribs Worth 17" Aggregate="Add" />
+      <Data Name="Cribs Worth 18" Aggregate="Add" />
+      <Data Name="Cribs Worth 19" Aggregate="Add" />
+      <Data Name="Cribs Worth 20" Aggregate="Add" />
+      <Data Name="Cribs Worth 21" Aggregate="Add" />
+      <Data Name="Cribs Worth 22" Aggregate="Add" />
+      <Data Name="Cribs Worth 23" Aggregate="Add" />
+      <Data Name="Cribs Worth 24" Aggregate="Add" />
+      <Data Name="Cribs Worth 25" Aggregate="Add" />
+      <Data Name="Cribs Worth 26" Aggregate="Add" />
+      <Data Name="Cribs Worth 27" Aggregate="Add" />
+      <Data Name="Cribs Worth 28" Aggregate="Add" />
+      <Data Name="Cribs Worth 29" Aggregate="Add" />
+      <Data Name="Plays Worth 0" Aggregate="Add" />
+      <Data Name="Plays Worth 1" Aggregate="Add" />
+      <Data Name="Plays Worth 2" Aggregate="Add" />
+      <Data Name="Plays Worth 3" Aggregate="Add" />
+      <Data Name="Plays Worth 4" Aggregate="Add" />
+      <Data Name="Plays Worth 5" Aggregate="Add" />
+      <Data Name="Plays Worth 6" Aggregate="Add" />
+      <Data Name="Plays Worth 7" Aggregate="Add" />
+      <Data Name="Plays Worth 8" Aggregate="Add" />
+      <Data Name="Plays Worth 9" Aggregate="Add" />
+      <Data Name="Plays Worth 10" Aggregate="Add" />
+      <Data Name="Plays Worth 11" Aggregate="Add" />
+      <Data Name="Plays Worth 12" Aggregate="Add" />
+      <Data Name="Plays Worth 13" Aggregate="Add" />
+      <Data Name="Plays Worth 14" Aggregate="Add" />
+      <Data Name="Plays Worth 15" Aggregate="Add" />
+      <Data Name="Plays Worth 16" Aggregate="Add" />
+      <Data Name="Plays Worth 17" Aggregate="Add" />
+      <Data Name="Plays Worth 18" Aggregate="Add" />
+      <Data Name="Plays Worth 19" Aggregate="Add" />
+      <Data Name="Plays Worth 20" Aggregate="Add" />
+      <Data Name="Plays Worth 21" Aggregate="Add" />
+      <Data Name="Plays Worth 22" Aggregate="Add" />
+      <Data Name="Plays Worth 23" Aggregate="Add" />
+      <Data Name="Plays Worth 24" Aggregate="Add" />
+      <Data Name="Plays Worth 25" Aggregate="Add" />
+      <Data Name="Plays Worth 26" Aggregate="Add" />
+      <Data Name="Plays Worth 27" Aggregate="Add" />
+      <Data Name="Plays Worth 28" Aggregate="Add" />
+      <Data Name="Plays Worth 29" Aggregate="Add" />
+    </Definition>
+  </RawData>
+</Statistics>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Boards>
+	<!-- Each Board node represents a cribbage board -->
+	<!--    Name : A name for the board -->
+	<!--    Holes (61/61,121/121): Total score the board supports -->
+	<!--    Bitmap: File containing the board image -->
+	<!--    Orientation (Horizontal/Vertical): Orientation of the board. When Vertical board image is rotated 90 degrees -->
+	<!--    Players : The Number of players the board supports -->
+	<Board Name="Basic" Holes="61,121" Bitmap="Board.BMP" Orientation="Horizontal" Players="2,4">
+	   <!-- Each Player node represents a player displayed on the cribbage board -->
+	   <!--    Number (1/2/3/4) : The number of the player this node represents -->
+	   <!--    Bitmap : The file containing the players Counter image -->
+	   <!--    Transparent : The name of the colour in the Counter bitmap that should be rendered transparent -->
+		<Player Number="1" Bitmap="Counter.BMP" Transparent="Black">
+		   <!-- Each hole node represents how to work out where to render the Counter for a given player score -->
+   	   <!--    Number (#/Range/Final) : If # then this is the coordinates for that score, If Range then this node has a formula which will work out the position for a range of scores. If final then this if the coordinates to use when the game is over -->
+   	   <!--    X : A X coordinate or a formula to calculate the X coordinate -->
+   	   <!--    Y : A Y coordinate or a formula to calculate the Y coordinate -->
+   	   <!--    Low : Where Range is specified this is the low size of the range that this formula supports -->
+   	   <!--    High : Where Range is specified this is the high size of the range that this formula supports -->
+			<Hole Number="0" X="1" Y="1" />
+			<Hole Number="Range" Low="1" High="30" X="4+(([Score]-1-([Score]-1)%5)/5*3)+([Score]*12)" Y="1" />
+			<Hole Number="Range" Low="31" High="60" X="409-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-30)*12)" Y="14" />
+			<Hole Number="Range" Low="61" High="90" X="4+(([Score]-1-([Score]-1)%5)/5*3)+(([Score]-60)*12)-36" Y="1" />
+			<Hole Number="Range" Low="91" High="120" X="445-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-90)*12)" Y="14" />
+			<Hole Number="Final" X="1" Y="14" />
+		</Player>                        
+		<Player Number="2" Bitmap="Counter.BMP" Transparent="Black">
+			<Hole Number="0" X="1" Y="29" />
+			<Hole Number="Range" Low="1" High="30" X="4+(([Score]-1-([Score]-1)%5)/5*3)+([Score]*12)" Y="29" />
+			<Hole Number="Range" Low="31" High="60" X="409-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-30)*12)" Y="42" />
+			<Hole Number="Range" Low="61" High="90" X="4+(([Score]-1-([Score]-1)%5)/5*3)+(([Score]-60)*12)-36" Y="29" />
+			<Hole Number="Range" Low="91" High="120" X="445-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-90)*12)" Y="42" />
+			<Hole Number="Final" X="1" Y="42" />
+		</Player>
+	</Board>
+	<Board Name="S" Holes="121" Bitmap="Board_s.BMP" Orientation="Horizontal" Players="2,4">
+		<Player Number="1" Bitmap="Counter.BMP" Transparent="Black">
+			<Hole Number="0" X="1" Y="1" />
+			<Hole Number="Range" Low="1" High="30" X="4+(([Score]-1-([Score]-1)%5)/5*3)+([Score]*12)" Y="1" />
+			<Hole Number="Range" Low="31" High="60" X="409-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-30)*12)" Y="14" />
+			<Hole Number="Range" Low="61" High="90" X="4+(([Score]-1-([Score]-1)%5)/5*3)+(([Score]-60)*12)-36" Y="1" />
+			<Hole Number="Range" Low="91" High="120" X="445-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-90)*12)" Y="14" />
+			<Hole Number="Final" X="1" Y="14" />
+		</Player>                        
+		<Player Number="2" Bitmap="Counter.BMP" Transparent="Black">
+			<Hole Number="0" X="1" Y="29" />
+			<Hole Number="Range" Low="1" High="30" X="4+(([Score]-1-([Score]-1)%5)/5*3)+([Score]*12)" Y="29" />
+			<Hole Number="Range" Low="31" High="60" X="409-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-30)*12)" Y="42" />
+			<Hole Number="Range" Low="61" High="90" X="4+(([Score]-1-([Score]-1)%5)/5*3)+(([Score]-60)*12)-36" Y="29" />
+			<Hole Number="Range" Low="91" High="120" X="445-(([Score]-1-([Score]-1)%5)/5*3)-(([Score]-90)*12)" Y="42" />
+			<Hole Number="Final" X="1" Y="42" />
+		</Player>
+	</Board>
+	<Board Name="David 1" Holes="121" Bitmap="CribBoard1.BMP" Orientation="Vertical" Players="2">
+		<Player Number="1" Bitmap="yellowpeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="15" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="15" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="15" Y="67" />
+			<Hole Number="37" X="17" Y="49" />
+			<Hole Number="38" X="25" Y="33" />
+			<Hole Number="39" X="38" Y="20" />
+			<Hole Number="40" X="55" Y="14" />
+			<Hole Number="41" X="74" Y="14" />
+			<Hole Number="42" X="91" Y="20" />
+			<Hole Number="43" X="104" Y="33" />
+			<Hole Number="44" X="112" Y="49" />
+			<Hole Number="45" X="114" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="114" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="114" Y="395" />
+			<Hole Number="82" X="108" Y="418" />
+			<Hole Number="83" X="86" Y="428" />
+			<Hole Number="84" X="64" Y="418" />
+			<Hole Number="85" X="58" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="58" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>                        
+		<Player Number="2" Bitmap="bluepeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="28" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="28" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="28" Y="67" />
+			<Hole Number="37" X="30" Y="54" />
+			<Hole Number="38" X="35" Y="41" />
+			<Hole Number="39" X="45" Y="32" />
+			<Hole Number="40" X="57" Y="27" />
+			<Hole Number="41" X="72" Y="27" />
+			<Hole Number="42" X="84" Y="32" />
+			<Hole Number="43" X="94" Y="41" />
+			<Hole Number="44" X="99" Y="54" />
+			<Hole Number="45" X="101" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="101" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="101" Y="395" />
+			<Hole Number="82" X="98" Y="409" />
+			<Hole Number="83" X="86" Y="415" />
+			<Hole Number="84" X="74" Y="409" />
+			<Hole Number="85" X="71" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="71" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>
+	</Board>
+	<Board Name="David 2" Holes="121" Bitmap="CribBoard2.JPG" Orientation="Vertical" Players="2">
+		<Player Number="1" Bitmap="yellowpeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="15" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="15" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="15" Y="67" />
+			<Hole Number="37" X="17" Y="49" />
+			<Hole Number="38" X="25" Y="33" />
+			<Hole Number="39" X="38" Y="20" />
+			<Hole Number="40" X="55" Y="14" />
+			<Hole Number="41" X="74" Y="14" />
+			<Hole Number="42" X="91" Y="20" />
+			<Hole Number="43" X="104" Y="33" />
+			<Hole Number="44" X="112" Y="49" />
+			<Hole Number="45" X="114" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="114" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="114" Y="395" />
+			<Hole Number="82" X="108" Y="418" />
+			<Hole Number="83" X="86" Y="428" />
+			<Hole Number="84" X="64" Y="418" />
+			<Hole Number="85" X="58" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="58" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>                        
+		<Player Number="2" Bitmap="bluepeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="28" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="28" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="28" Y="67" />
+			<Hole Number="37" X="30" Y="54" />
+			<Hole Number="38" X="35" Y="41" />
+			<Hole Number="39" X="45" Y="32" />
+			<Hole Number="40" X="57" Y="27" />
+			<Hole Number="41" X="72" Y="27" />
+			<Hole Number="42" X="84" Y="32" />
+			<Hole Number="43" X="94" Y="41" />
+			<Hole Number="44" X="99" Y="54" />
+			<Hole Number="45" X="101" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="101" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="101" Y="395" />
+			<Hole Number="82" X="98" Y="409" />
+			<Hole Number="83" X="86" Y="415" />
+			<Hole Number="84" X="74" Y="409" />
+			<Hole Number="85" X="71" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="71" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>
+	</Board>
+	<Board Name="David 3" Holes="121" Bitmap="CribBoard3.JPG" Orientation="Vertical" Players="2">
+		<Player Number="1" Bitmap="yellowpeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="15" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="15" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="15" Y="67" />
+			<Hole Number="37" X="17" Y="49" />
+			<Hole Number="38" X="25" Y="33" />
+			<Hole Number="39" X="38" Y="20" />
+			<Hole Number="40" X="55" Y="14" />
+			<Hole Number="41" X="74" Y="14" />
+			<Hole Number="42" X="91" Y="20" />
+			<Hole Number="43" X="104" Y="33" />
+			<Hole Number="44" X="112" Y="49" />
+			<Hole Number="45" X="114" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="114" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="114" Y="395" />
+			<Hole Number="82" X="108" Y="418" />
+			<Hole Number="83" X="86" Y="428" />
+			<Hole Number="84" X="64" Y="418" />
+			<Hole Number="85" X="58" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="58" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>                        
+		<Player Number="2" Bitmap="bluepeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="28" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="28" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="28" Y="67" />
+			<Hole Number="37" X="30" Y="54" />
+			<Hole Number="38" X="35" Y="41" />
+			<Hole Number="39" X="45" Y="32" />
+			<Hole Number="40" X="57" Y="27" />
+			<Hole Number="41" X="72" Y="27" />
+			<Hole Number="42" X="84" Y="32" />
+			<Hole Number="43" X="94" Y="41" />
+			<Hole Number="44" X="99" Y="54" />
+			<Hole Number="45" X="101" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="101" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="101" Y="395" />
+			<Hole Number="82" X="98" Y="409" />
+			<Hole Number="83" X="86" Y="415" />
+			<Hole Number="84" X="74" Y="409" />
+			<Hole Number="85" X="71" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="71" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>
+	</Board>
+	<Board Name="David 4" Holes="121" Bitmap="CribBoard4.JPG" Orientation="Vertical" Players="2">
+		<Player Number="1" Bitmap="yellowpeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="15" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="15" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="15" Y="67" />
+			<Hole Number="37" X="17" Y="49" />
+			<Hole Number="38" X="25" Y="33" />
+			<Hole Number="39" X="38" Y="20" />
+			<Hole Number="40" X="55" Y="14" />
+			<Hole Number="41" X="74" Y="14" />
+			<Hole Number="42" X="91" Y="20" />
+			<Hole Number="43" X="104" Y="33" />
+			<Hole Number="44" X="112" Y="49" />
+			<Hole Number="45" X="114" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="114" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="114" Y="395" />
+			<Hole Number="82" X="108" Y="418" />
+			<Hole Number="83" X="86" Y="428" />
+			<Hole Number="84" X="64" Y="418" />
+			<Hole Number="85" X="58" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="58" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>                        
+		<Player Number="2" Bitmap="bluepeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="28" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="28" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="28" Y="67" />
+			<Hole Number="37" X="30" Y="54" />
+			<Hole Number="38" X="35" Y="41" />
+			<Hole Number="39" X="45" Y="32" />
+			<Hole Number="40" X="57" Y="27" />
+			<Hole Number="41" X="72" Y="27" />
+			<Hole Number="42" X="84" Y="32" />
+			<Hole Number="43" X="94" Y="41" />
+			<Hole Number="44" X="99" Y="54" />
+			<Hole Number="45" X="101" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="101" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="101" Y="395" />
+			<Hole Number="82" X="98" Y="409" />
+			<Hole Number="83" X="86" Y="415" />
+			<Hole Number="84" X="74" Y="409" />
+			<Hole Number="85" X="71" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="71" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>
+	</Board>
+	<Board Name="David 5" Holes="121" Bitmap="CribBoard5.JPG" Orientation="Vertical" Players="2">
+		<Player Number="1" Bitmap="yellowpeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="15" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="15" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="15" Y="67" />
+			<Hole Number="37" X="17" Y="49" />
+			<Hole Number="38" X="25" Y="33" />
+			<Hole Number="39" X="38" Y="20" />
+			<Hole Number="40" X="55" Y="14" />
+			<Hole Number="41" X="74" Y="14" />
+			<Hole Number="42" X="91" Y="20" />
+			<Hole Number="43" X="104" Y="33" />
+			<Hole Number="44" X="112" Y="49" />
+			<Hole Number="45" X="114" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="114" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="114" Y="395" />
+			<Hole Number="82" X="108" Y="418" />
+			<Hole Number="83" X="86" Y="428" />
+			<Hole Number="84" X="64" Y="418" />
+			<Hole Number="85" X="58" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="58" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>                        
+		<Player Number="2" Bitmap="bluepeg.BMP" Transparent="Magenta">
+			<Hole Number="0" X="28" Y="407" />
+			<Hole Number="Range" Low="1" High="35" X="28" Y="390-(([Score]-1-([Score]-1)%5)/5*5)-([Score]*8)" />
+			<Hole Number="36" X="28" Y="67" />
+			<Hole Number="37" X="30" Y="54" />
+			<Hole Number="38" X="35" Y="41" />
+			<Hole Number="39" X="45" Y="32" />
+			<Hole Number="40" X="57" Y="27" />
+			<Hole Number="41" X="72" Y="27" />
+			<Hole Number="42" X="84" Y="32" />
+			<Hole Number="43" X="94" Y="41" />
+			<Hole Number="44" X="99" Y="54" />
+			<Hole Number="45" X="101" Y="67" />
+			<Hole Number="Range" Low="46" High="80" X="101" Y="27+(([Score]-1-([Score]-1)%5)/5*5)+(([Score]-45)*8)" />
+			<Hole Number="81" X="101" Y="395" />
+			<Hole Number="82" X="98" Y="409" />
+			<Hole Number="83" X="86" Y="415" />
+			<Hole Number="84" X="74" Y="409" />
+			<Hole Number="85" X="71" Y="395" />
+			<Hole Number="Range" Low="86" High="120" X="71" Y="467-(([Score]-1-([Score]-1)%5)/5*5)-(([Score]-86)*8)" />
+			<Hole Number="Final" X="65" Y="52" />
+		</Player>
+	</Board>
+</Boards>

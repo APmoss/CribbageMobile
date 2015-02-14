@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Layouts>
+	<Definitions>
+         <TableTextColour />
+         <TableColour />
+			<ShadowOffsetX />
+			<ShadowOffsetY />
+			<SelectedOffset />
+			<CardHeight />
+			<CardWidth />
+			<StarterX />
+			<StarterY />
+			<StarterTextX />
+			<StarterTextY />
+			<CardHorizontalOffset />
+			<CardVerticalOffset />
+			<TotalX />
+			<TotalY />
+			<TotalTextX />
+			<TotalTextY />
+			<PlayButtonX />
+			<PlayButtonY />
+			<PlayButtonWidth />
+			<PlayButtonHeight />
+			<DealButtonX />
+			<DealButtonY />
+			<DealButtonWidth />
+			<DealButtonHeight />
+			<PlayerHandX1 />
+			<PlayerHandY1 />
+			<PlayerHandOrientation1 />
+			<PlayerPlayedX1 />
+			<PlayerPlayedY1 />
+			<PlayerPlayedOrientation1 />
+			<PlayerCribX1 />
+			<PlayerCribY1 />
+			<PlayerCribOrientation1 />
+			<PlayerHandTextX1 />
+			<PlayerHandTextY1 />
+			<PlayerCribTextX1 />
+			<PlayerCribTextY1 />
+			<PlayerHandX2 />
+			<PlayerHandY2 />
+			<PlayerHandOrientation2 />
+			<PlayerPlayedX2 />
+			<PlayerPlayedY2 />
+			<PlayerPlayedOrientation2 />
+			<PlayerCribX2 />
+			<PlayerCribY2 />
+			<PlayerCribOrientation2 />
+			<PlayerHandTextX2 />
+			<PlayerHandTextY2 />
+			<PlayerCribTextX2 />
+			<PlayerCribTextY2 />
+	</Definitions>
+	<Values>
+		<Layout Name="Standard">
+         <TableTextColour>White</TableTextColour>
+         <TableColour>Green</TableColour>
+			<ShadowOffsetX>5</ShadowOffsetX>
+			<ShadowOffsetY>5</ShadowOffsetY>
+			<SelectedOffset>10</SelectedOffset>
+			<CardHeight>96</CardHeight>
+			<CardWidth>71</CardWidth>
+			<StarterX>[PlayerCribX1]+[CardWidth]+[ShadowOffsetX]+[CardHorizontalOffset]+[CardHorizontalOffset]+[CardHorizontalOffset]+15</StarterX>
+			<StarterY>[PlayerCribY1]</StarterY>
+			<StarterTextX>[StarterX]</StarterTextX>
+			<StarterTextY>[PlayerCribTextY1]</StarterTextY>
+			<CardHorizontalOffset>15</CardHorizontalOffset>
+			<CardVerticalOffset>20</CardVerticalOffset>
+			<TotalX>[PlayerPlayedX1]+[ShadowOffsetX]+[CardHorizontalOffset]+[CardHorizontalOffset]+[CardHorizontalOffset]+[CardWidth]+15</TotalX>
+			<TotalY>[PlayerPlayedY1]+50</TotalY>
+			<TotalTextX>[TotalX]</TotalTextX>
+			<TotalTextY>[TotalY]-25</TotalTextY>
+			<PlayButtonX>[PlayerHandX1]+[CardWidth]+[CardHorizontalOffset]+[ShadowOffsetX]+10</PlayButtonX>
+			<PlayButtonY>[PlayerCribY1]</PlayButtonY>
+			<PlayButtonWidth>68</PlayButtonWidth>
+			<PlayButtonHeight>20</PlayButtonHeight>
+			<DealButtonX>[PlayButtonX]</DealButtonX>
+			<DealButtonY>[PlayButtonY]+[PlayButtonHeight]+10</DealButtonY>
+			<DealButtonWidth>68</DealButtonWidth>
+			<DealButtonHeight>20</DealButtonHeight>
+			<PlayerHandX1>25</PlayerHandX1>
+			<PlayerHandY1>5</PlayerHandY1>
+			<PlayerHandOrientation1>VERTICAL</PlayerHandOrientation1>
+			<PlayerPlayedX1>[PlayerHandX1]+[CardWidth]+[CardHorizontalOffset]+[ShadowOffsetX]+5</PlayerPlayedX1>
+			<PlayerPlayedY1>[PlayerHandY1]</PlayerPlayedY1>
+			<PlayerPlayedOrientation1>HORIZONTAL</PlayerPlayedOrientation1>
+			<PlayerCribX1>[PlayerPlayedX1]+[CardHorizontalOffset]+[CardHorizontalOffset]+[CardHorizontalOffset]+50</PlayerCribX1>
+			<PlayerCribY1>[PlayerHandY1]+[CardHeight]+[ShadowOffsetY]+40</PlayerCribY1>
+			<PlayerCribOrientation1>HORIZONTAL</PlayerCribOrientation1>
+			<PlayerHandTextX1>[PlayerHandX1]</PlayerHandTextX1>
+			<PlayerHandTextY1>[PlayerHandY1]+[CardHeight]+[ShadowOffsetY]+[CardVerticalOffset]+[CardVerticalOffset]+[CardVerticalOffset]+[CardVerticalOffset]+[CardVerticalOffset]+5</PlayerHandTextY1>
+			<PlayerCribTextX1>[PlayerCribX1]</PlayerCribTextX1>
+			<PlayerCribTextY1>[PlayerHandY1]+[CardHeight]+[ShadowOffsetY]+20</PlayerCribTextY1>
+			<PlayerHandX2>[PlayerPlayedX2]+[CardWidth]+[ShadowOffsetX]+[CardHorizontalOffset]+[CardHorizontalOffset]+[CardHorizontalOffset]+5</PlayerHandX2>
+			<PlayerHandY2>[PlayerHandY1]</PlayerHandY2>
+			<PlayerHandOrientation2>VERTICAL</PlayerHandOrientation2>
+			<PlayerPlayedX2>[TotalX]+70</PlayerPlayedX2>
+			<PlayerPlayedY2>[PlayerPlayedY1]</PlayerPlayedY2>
+			<PlayerPlayedOrientation2>HORIZONTAL</PlayerPlayedOrientation2>
+			<PlayerCribX2>[PlayerCribX1]</PlayerCribX2>
+			<PlayerCribY2>[PlayerCribY1]</PlayerCribY2>
+			<PlayerCribOrientation2>HORIZONTAL</PlayerCribOrientation2>
+			<PlayerHandTextX2>[PlayerHandX2]</PlayerHandTextX2>
+			<PlayerHandTextY2>[PlayerHandTextY1]</PlayerHandTextY2>
+			<PlayerCribTextX2>[PlayerCribTextX1]</PlayerCribTextX2>
+			<PlayerCribTextY2>[PlayerCribTextY1]</PlayerCribTextY2>
+		</Layout>
+	</Values>
+</Layouts>
